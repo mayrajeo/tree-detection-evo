@@ -6,7 +6,6 @@
 * [Getting started](#about)
   * [Installation](#installation)
 * [Data](#data)
-* [Codes](#codes)
 * [Workflow](#workflow)
   * [Preprocessing](#preprocessing)
   * [Individual tree detection and matching field data to detected tree crowns](#individual-tree-detection-and-matching-field-data-to-detected-tree-crowns)
@@ -50,7 +49,7 @@ cd fastai2
 pip install -e ".[dev]"
 ```
 
-NOTE: Since Pytorch version 1.6, the default save format has changed from Pickle-based to zip-file based. `torch.load` should however work with older versions. This project was done with Pytorch 1.3.0
+NOTE: Since Pytorch version 1.6, the default save format has changed from Pickle-based to zip-file based. `torch.load` should however work with older versions. 
 
 ## Data
 
@@ -62,7 +61,7 @@ All steps in our work are presented either in Jupyter Notebooks or individual sc
 
 ### Preprocessing
 
-Preprocessing is described in notebook [Preprocessing, segmentation and train data generation](notebooks/Preprocessing%2C%20segmentation%20and%20train%20data%20generation.ipynb).
+Preprocessing is described in notebook [Data exploration and preprocessing](notebooks/Data%20exploration%20and%20preprocessing.ipynb).
 
 ### Individual tree detection and matching field data to detected tree crowns
 
