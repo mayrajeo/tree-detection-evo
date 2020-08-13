@@ -1,7 +1,7 @@
 #!/usr/bn/env/python
 
 """
-Utility functions used in multiple places
+Utility functions used in multiple places in various stages of work process
 """
 
 import numpy as np 
@@ -143,24 +143,6 @@ def resample_swir(swir_cube):
     for c in range(num_chans):
         out_arr[c] = tile_array(swir_cube[c].values, 2, 2)
     return out_arr
-
-from typing import *
-
-def listify(o):
-    if o is None: return []
-    if isinstance(o, list): return o
-    if isinstance(o, str): return [o]
-    if isinstance(o, Iterable): return list(o)
-    return [o]
-
-import re
-
-_camel_re1 = re.compile('(.)([A-Z][a-z]+)')
-_camel_re2 = re.compile('([a-z0-9])([A-Z])')
-def camel2snake(name):
-    s1 = re.sub(_camel_re1, r'\1_\2', name)
-    return re.sub(_camel_re2, r'\1_\2', s1).lower()
-
 
 def snv(vals):
     """
