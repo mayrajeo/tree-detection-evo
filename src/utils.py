@@ -86,7 +86,7 @@ def label_contours(row, field_plot):
             if dist < min_dist:
                 min_dist = dist
                 min_idx = i
-    return points[i]
+    return points[min_idx]
     
 def round_to_tile(coord):
     """

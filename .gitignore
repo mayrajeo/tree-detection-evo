@@ -196,3 +196,8 @@ results/
 ### Cores
 
 core.*
+
+### Obsolete work
+
+old/
+figures/
