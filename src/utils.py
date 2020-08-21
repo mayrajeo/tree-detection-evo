@@ -59,7 +59,7 @@ def label_contours(row, field_plot):
     else returns None"""
     points = [(None, None, None, None, None, None, None)]
     for tree in field_plot.itertuples():
-        if Point(tree.tree_X, tree.tree_Y).within(row.geometry.buffer(1)):
+        if Point(tree.tree_X, tree.tree_Y).within(row.geometry):
             points.append((tree.tree_X, tree.tree_Y, tree.species, 
                            tree.DBH, tree.sum_2019, tree.nov_2019, tree.is_gps))
     if len(points) < 3:
