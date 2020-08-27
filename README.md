@@ -36,6 +36,8 @@ For R-files, use `module load r-env`
 
 ### Installation
 
+**BELOW HAS CHANGED** because fastai2 was officially released and renamed to fastai. Work in progress.
+
 Run `conda env create -f environment.yml`, and then install fastai2 either from pip with `pip install fastai2`, or you can use editable install of fastai2 and fastcore:
 
 ```bash
