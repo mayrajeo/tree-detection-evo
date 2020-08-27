@@ -30,12 +30,18 @@ source $SCRATCH/mayrajan/conda_activate.sh
 #cd ..
 
 # set parameters
-shp_fn=$SCRATCH/mayrajan/aspen_detection/data/labeled_tiles/matched_trees.shp
+shp_fn=$SCRATCH/mayrajan/aspen_detection/data/labeled_tiles_fixed/matched_trees.shp
 tile_dir=$SCRATCH/data/tiles/
-save_dir=$SCRATCH/mayrajan/aspen_detection/data/tree_cubes_10m_odd
+save_dir=$SCRATCH/mayrajan/aspen_detection/data/tree_cubes_10m_fixed
 
 # create non-delineated cubes
 for i in {2..5}
 do
     python $SCRATCH/mayrajan/aspen_detection/make_train_data.py $shp_fn $tile_dir $save_dir/$i'm' --window_size $i
+done
+
+# create non-delineated cubes
+for i in {2..5}
+do
+    python $SCRATCH/mayrajan/aspen_detection/make_train_data.py $shp_fn $tile_dir $save_dir/$i'm_delin' --window_size $i --delin
 done

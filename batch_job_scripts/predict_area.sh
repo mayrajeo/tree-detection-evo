@@ -17,11 +17,9 @@ source $SCRATCH/mayrajan/conda_activate.sh
 # set parameters
 tile_fdr=$SCRATCH/mayrajan/aspen_detection/data/tiles
 shp_fdr=$SCRATCH/mayrajan/aspen_detection/data/delineated_tiles/
-out_fdr=$SCRATCH/mayrajan/aspen_detection/data/results_v2/
+out_fdr=$SCRATCH/mayrajan/aspen_detection/data/results_v3/
 ws=2
-learn_path=$SCRATCH/mayrajan/aspen_detection/fastai_models/2m_relu_odd/export.pkl
-
-# create non-delineated cubes
+learn_path=$SCRATCH/mayrajan/aspen_detection/fastai_models/2m_relu_fixed/export.pkl
 
 python $SCRATCH/mayrajan/aspen_detection/predict_fastaiv2.py $tile_fdr $learn_path $shp_fdr $out_fdr $ws
 

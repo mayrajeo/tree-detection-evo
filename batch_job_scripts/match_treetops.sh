@@ -16,15 +16,15 @@ scratchdir=$SCRATCH/mayrajan/aspen_detection
 
 cd $scratchdir/
 # set parameters for preprocessing
-data_path=$scratchdir/data/delineated_tiles_arto/raw/
-outdir=$scratchdir/data/delineated_tiles_arto/
+data_path=$scratchdir/data/delineated_tiles/raw/
+outdir=$scratchdir/data/delineated_tiles/
 min_area=1
 # Run match treetops and delineations
 #python preprocess_shapefiles.py $data_path $outdir --min_area $min_area
 
 # set parameters for tree matching
 field_data=$scratchdir/data/field_data/all_trees_dbh_150_dec_2019.shp
-tree_crown_dir=$scratchdir/data/delineated_tiles_arto/
-shp_out_dir=$scratchdir/data/labeled_tiles_arto/
+tree_crown_dir=$scratchdir/data/delineated_tiles/
+shp_out_dir=$scratchdir/data/labeled_tiles_fixed/
 # Run tree detection
 python match_field_data.py $field_data $tree_crown_dir $shp_out_dir
