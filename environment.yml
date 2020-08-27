@@ -1,0 +1,25 @@
+name: ibc-carbon
+channels:
+  - fastai
+  - pytorch
+  - defaults
+dependencies:
+  - pytorch::pytorch>=1.3.0
+  - torchvision>=0.5
+  - fastprogress>=0.1.22
+  - jupyter
+  - pillow
+  - python=>3.6
+  - bokeh
+  - plotly
+  - rasterio
+  - geopandas
+  - xarray
+  - conda-forge::jupyter_contrib_nbextensions
+  - scikit-learn
+  - lightgbm
+  - scikit-image
+  - hvplot
+  - holoviews
+  - conda-forge::descartes
+  - pip
