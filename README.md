@@ -36,9 +36,18 @@ For R-files, use `module load r-env`
 
 ### Installation
 
-**BELOW HAS CHANGED** because fastai2 was officially released and renamed to fastai. Work in progress.
+fastai2 was officially released and renamed to fastai 21.8.2020. The work was done with prerelease version, but it *should* work with the version available on pip and conda by running 
 
-Run `conda env create -f environment.yml`, and then install fastai2 either from pip with `pip install fastai2`, or you can use editable install of fastai2 and fastcore:
+```bash
+shopt -s globstar
+perl -pi -e 's/fastai2/fastai/g' **/*
+```
+
+Then run `conda env create -f environment.yml` and `pip install fastai`. 
+
+Steps below show how to replicate development environment.
+
+Run `conda env create -f environment.yml`, and then use editable install of fastai2 and fastcore:
 
 ```bash
 git clone https://github.com/fastai/fastcore
@@ -50,7 +59,6 @@ git clone --recurse-submodules https://github.com/fastai/fastai2
 cd fastai2
 pip install -e ".[dev]"
 ```
-
 NOTE: Since Pytorch version 1.6, the default save format has changed from Pickle-based to zip-file based. `torch.load` should however work with older versions. 
 
 ## Data
