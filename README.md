@@ -26,6 +26,8 @@ This is a code repository for our paper **Tree species classification from airbo
 >
 > Deep neural networks, being a black-box model, hide the information about how they reason their decision. We used both occlusion and saliency maps to gain insight on which input features 3D-CNN puts the most weight. Finally, we used the best-performing 3D-CNN to produce wall-to-wall tree species map for the full study area that can later be used as a ground-truth in other tasks, such as tree species mapping from multispectral satellite images. Improved tree species classification demonstrated by our study can benefit both sustainable forestry and biodiversity conservation.
 
+![Results](images/result_map.jpeg "Results aggregated to 10 m grid")
+
 ## Getting started
 
 Project members can access preinstalled conda environment by running `source conda_activate.sh`. This version has fastai2 v0.0.17 and pytorch 1.3.0. This project should work with latest versions (at the time of writing `fastai2==0.0.25` and `pytorch=1.6.0`, but this hasn't been tested yet.
