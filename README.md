@@ -93,6 +93,8 @@ Example of training process is presented in notebook [Tree species classificatio
 
 ### Inference and interpretation
 
+Inferences and comparisons between different CNN-models are presented in notebook [Full tile predictions](Full%20tile%20predictions.ipynb)
+
 Interpretation based on saliency and occlusion is presented in notebook [Saliences](Saliences.ipynb)
 
 ## Authors
