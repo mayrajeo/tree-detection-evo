@@ -27,6 +27,7 @@ This is a code repository for our paper **Tree species classification from airbo
 > Deep neural networks, being a black-box model, hide the information about how they reason their decision. We used both occlusion and saliency maps to gain insight on which input features 3D-CNN puts the most weight. Finally, we used the best-performing 3D-CNN to produce wall-to-wall tree species map for the full study area that can later be used as a ground-truth in other tasks, such as tree species mapping from multispectral satellite images. Improved tree species classification demonstrated by our study can benefit both sustainable forestry and biodiversity conservation.
 
 ![Results](images/result_map.jpeg "Results aggregated to 10 m grid")
+*Main tree species aggregated to 10 m grid. Each grid cell is labeled with the most common tree species based on the number of treetops. Smaller figure shows a 100m X 100m patch with a larger aspen stand*
 
 ## Getting started
 
