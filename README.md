@@ -18,7 +18,7 @@
 
 ## About
 
-This is a code repository for our paper **Tree species classification from airborne hyperspectral and LiDAR data using 3D convolutional neural networks**, submitted to Remote Sensing of Environment for publication.
+This is a code repository for our paper **Tree species classification from airborne hyperspectral and LiDAR data using 3D convolutional neural networks**, submitted to Remote Sensing of Environment for publication. Revision was submitted on 29.9.2020
 
 > During the last two decades, forest monitoring and inventory systems have moved from field surveys to remote sensing-based methods. These methods tend to focus on economically significant components of forests, thus leaving out many factors vital for forest biodiversity, such as the occurrence of species with low economical but high ecological values. Airborne hyperspectral imagery has shown significant potential for tree species classification. However, the most common analysis methods, such as random forest and support vector machines, require manual feature engineering in order to utilize both spatial and spectral features, whereas CNNs are able to extract these features from the raw data. 
 >
