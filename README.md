@@ -82,7 +82,7 @@ Process and steps is described in notebook [Individual tree detection, segmentat
 
 ### Training and validation data generation
 
-Process is descried in notebook [Training and validation data generation](notebooks/Training%20and%20validation%20data%20generation.ipynb).
+Process is described in notebook [Training and validation data generation](notebooks/Training%20and%20validation%20data%20generation.ipynb).
 
 ### Model training
 
