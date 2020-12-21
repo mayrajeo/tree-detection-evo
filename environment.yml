@@ -9,7 +9,7 @@ dependencies:
   - fastprogress>=0.1.22
   - jupyter
   - pillow
-  - python=>3.6
+  - python>=3.6
   - bokeh
   - plotly
   - rasterio

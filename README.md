@@ -18,7 +18,7 @@
 
 ## About
 
-This is a code repository for our paper **Tree species classification from airborne hyperspectral and LiDAR data using 3D convolutional neural networks**, submitted to Remote Sensing of Environment for publication.
+This is a code repository for our paper **Tree species classification from airborne hyperspectral and LiDAR data using 3D convolutional neural networks**, submitted to Remote Sensing of Environment for publication. Revision was submitted on 29.9.2020
 
 > During the last two decades, forest monitoring and inventory systems have moved from field surveys to remote sensing-based methods. These methods tend to focus on economically significant components of forests, thus leaving out many factors vital for forest biodiversity, such as the occurrence of species with low economical but high ecological values. Airborne hyperspectral imagery has shown significant potential for tree species classification. However, the most common analysis methods, such as random forest and support vector machines, require manual feature engineering in order to utilize both spatial and spectral features, whereas CNNs are able to extract these features from the raw data. 
 >
@@ -27,6 +27,7 @@ This is a code repository for our paper **Tree species classification from airbo
 > Deep neural networks, being a black-box model, hide the information about how they reason their decision. We used both occlusion and saliency maps to gain insight on which input features 3D-CNN puts the most weight. Finally, we used the best-performing 3D-CNN to produce wall-to-wall tree species map for the full study area that can later be used as a ground-truth in other tasks, such as tree species mapping from multispectral satellite images. Improved tree species classification demonstrated by our study can benefit both sustainable forestry and biodiversity conservation.
 
 ![Results](images/result_map.jpeg "Results aggregated to 10 m grid")
+*Main tree species aggregated to 10 m grid. Each grid cell is labeled with the most common tree species based on the number of treetops. Smaller figure shows a 100m X 100m patch with a larger aspen stand*
 
 ## Getting started
 
@@ -81,7 +82,7 @@ Process and steps is described in notebook [Individual tree detection, segmentat
 
 ### Training and validation data generation
 
-Process is descried in notebook [Training and validation data generation](notebooks/Training%20and%20validation%20data%20generation.ipynb).
+Process is described in notebook [Training and validation data generation](notebooks/Training%20and%20validation%20data%20generation.ipynb).
 
 ### Model training
 
